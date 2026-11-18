@@ -5,6 +5,7 @@ Check out the live version of the game:
 👉 [Play Hangman Game](https://negar-younesi.github.io/hangman-game/)
 
 🎮 Hangman Game
+🎮 Hangman Game
 
 A simple, interactive, and responsive Hangman Game built with HTML5, CSS3, and Vanilla JavaScript.
 
@@ -46,14 +47,14 @@ hangman-game/
 ├── README.md
 │
 └── images/
-├── hangman0.png
-├── hangman1.png
-├── hangman2.png
-├── hangman3.png
-├── hangman4.png
-├── hangman5.png
-├── hangman6.png
-└── winner.png
+    ├── hangman0.png
+    ├── hangman1.png
+    ├── hangman2.png
+    ├── hangman3.png
+    ├── hangman4.png
+    ├── hangman5.png
+    ├── hangman6.png
+    └── winner.png
 
 🎯 How to Play
 Open the game in your browser.
@@ -66,27 +67,25 @@ Use the Hint button to reveal a hidden letter at the cost of 5 points.
 Earn 10 points when you successfully guess the word.
 Click New Game to start another round.
 🏆 Scoring Rules
-Action Points
-Successfully guess a word +10
-Use a hint -5
-Incorrect guess 0
-
-Additional Rules:
-
+Action	Points
+Successfully guess a word	+10
+Use a hint	-5
+Incorrect guess	0
+Additional Rules
 You need at least 5 points to use a hint.
 Each hint reveals one random unrevealed letter.
-A hint counts as a guess and can reveal a letter even if it is incorrect.
+A hint counts as a guess.
 Your score is preserved between rounds.
 Starting a new game does not reset your accumulated score.
 📚 Word Categories
 
 The game currently includes four categories:
 
-Category Example Words
-General Never, Break, Bullet, Water, Music
-Animals Tiger, Horse, Rabbit, Dolphin
-Fruits Apple, Banana, Mango, Cherry
-Colors Purple, Yellow, Green, White
+Category	Example Words
+General	Never, Break, Bullet, Water, Music
+Animals	Tiger, Horse, Rabbit, Dolphin
+Fruits	Apple, Banana, Mango, Cherry
+Colors	Purple, Yellow, Green, White
 🚀 Getting Started
 
 No installation or additional dependencies are required.
@@ -114,7 +113,7 @@ The game features a clean and compact interface designed for different screen si
 
 Desktop: Centered game layout with a 13-column letter grid.
 Mobile: Responsive layout with a 7-column letter grid.
-Short screens: Reduced spacing and image sizes to make better use of available vertical space.
+Short Screens: Reduced spacing and image sizes to make better use of available vertical space.
 Accessibility: Visible keyboard focus indicators and reduced-motion preferences.
 🎨 Customization
 Adding New Words
@@ -123,9 +122,9 @@ You can add new words or categories by editing the words object in main.js.
 
 javascript
 const words = {
-General: ["never", "break", "water"],
-Animals: ["tiger", "horse", "rabbit"],
-Technology: ["javascript", "computer", "browser"],
+  General: ["never", "break", "water"],
+  Animals: ["tiger", "horse", "rabbit"],
+  Technology: ["javascript", "computer", "browser"],
 };
 
 Changing Game Settings
@@ -169,8 +168,3 @@ Open a Pull Request.
 If you enjoy this project, consider giving it a star on GitHub!
 
 Thanks for playing! 🎉
-
-
-
-
- 
