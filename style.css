@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #e9ecef;
+  --surface: #ffffff;
+  --primary: #343a40;
+  --text: #212529;
+  --border: #adb5bd;
+  --danger: #dc2626;
+  --success: #16a34a;
+}
+
+body {
+  min-height: 100vh;
+  padding: 20px;
+  background-color: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+}
+
+.game-container {
+  width: 100%;
+  max-width: 850px;
+  min-height: 90vh;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: var(--surface);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.game-header h1 {
+  font-size: 34px;
+  color: var(--primary);
+  letter-spacing: 2px;
+}
+
+.game-header p {
+  margin-top: 10px;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+.letters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 750px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.letters button {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--surface);
+  color: var(--primary);
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.letters button:hover:not(:disabled) {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  transform: translateY(-3px);
+}
+
+.letters button:focus-visible,
+.restart-btn:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
+.letters button.used,
+.letters button:disabled {
+  background-color: #f87171;
+  color: white;
+  border-color: #ef4444;
+  cursor: not-allowed;
+}
+
+.image img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  margin: 30px auto 0;
+}
+
+.clue p {
+  color: var(--text);
+  text-align: center;
+  margin-top: 25px;
+  font-weight: 900;
+  letter-spacing: 12px;
+  font-size: 26px;
+  overflow-wrap: anywhere;
+}
+
+.attempts {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #495057;
+}
+
+.gameover p {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.gameover .won {
+  color: var(--success);
+}
+
+.gameover .lost {
+  color: var(--danger);
+}
+
+.restart-btn {
+  display: none;
+  margin: 25px auto 0;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.restart-btn:hover {
+  background-color: #495057;
+  transform: translateY(-2px);
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #6c757d;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  .game-container {
+    padding: 25px 12px;
+    min-height: 95vh;
+  }
+
+  .game-header h1 {
+    font-size: 28px;
+  }
+
+  .letters {
+    gap: 7px;
+  }
+
+  .letters button {
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+  }
+
+  .image img {
+    max-height: 220px;
+  }
+
+  .clue p {
+    font-size: 22px;
+    letter-spacing: 7px;
+  }
+
+  .gameover p {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 360px) {
+  .letters {
+    gap: 5px;
+  }
+
+  .letters button {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+
+  .clue p {
+    letter-spacing: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
