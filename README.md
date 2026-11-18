@@ -2,15 +2,16 @@
 
 👉 [Play Hangman Game](https://negar-younesi.github.io/hangman-game/)
 
+Check out the live version of the game:
+
+👉 Play Hangman Game
 🎮 Hangman Game
 
 A simple, interactive, and responsive Hangman Game built with HTML5, CSS3, and Vanilla JavaScript.
 
 Guess the hidden word before the hangman is complete! Choose from different word categories, earn points, use hints strategically, and challenge yourself.
 
-Check out the live version of the game:
-
-👉 Play Hangman Game
+<br>
 
 ✨ Features
 Multiple Categories: Guess words from General, Animals, Fruits, and Colors.
@@ -25,12 +26,17 @@ New Game: Start another round without refreshing the page.
 Responsive Design: Optimized for desktop and mobile screens.
 Compact Layout: Designed to keep the main game elements accessible within typical desktop viewports.
 Accessibility: Includes keyboard focus indicators and reduced-motion support.
+
+<br>
+
 🛠️ Technologies
 HTML5
 CSS3
 JavaScript (Vanilla JS)
 
 No external libraries, frameworks, or dependencies are required.
+
+<br>
 
 📂 Project Structure
 text
@@ -51,6 +57,9 @@ hangman-game/
     ├── hangman6.png
     └── winner.png
 
+
+<br>
+
 🎯 How to Play
 Open the game in your browser.
 A random word and its category will be displayed.
@@ -61,17 +70,26 @@ You have a maximum of 6 incorrect guesses.
 Use the Hint button to reveal a hidden letter at the cost of 5 points.
 Earn 10 points when you successfully guess the word.
 Click New Game to start another round.
+
+<br>
+
 🏆 Scoring Rules
 Action	Points
 Successfully guess a word	+10
 Use a hint	-5
 Incorrect guess	0
+
+<br>
+
 Additional Rules
 You need at least 5 points to use a hint.
 Each hint reveals one random unrevealed letter.
 A hint counts as a guess and can reveal a letter even if it is incorrect.
 Your score is preserved between rounds.
 Starting a new game does not reset your accumulated score.
+
+<br>
+
 📚 Word Categories
 
 The game currently includes four categories:
@@ -81,6 +99,9 @@ General	Never, Break, Bullet, Water, Music
 Animals	Tiger, Horse, Rabbit, Dolphin
 Fruits	Apple, Banana, Mango, Cherry
 Colors	Purple, Yellow, Green, White
+
+<br>
+
 🚀 Getting Started
 
 No installation or additional dependencies are required.
@@ -89,23 +110,31 @@ Prerequisites
 
 A modern web browser is all you need.
 
+<br>
+
 Installation
 
-1. Clone the repository:
+Step 1: Clone the repository
 
 bash
 git clone https://github.com/negar-younesi/hangman-game.git
 
 
-2. Navigate to the project directory:
+<br>
+
+Step 2: Navigate to the project directory
 
 bash
 cd hangman-game
 
 
-3. Open index.html in your browser.
+<br>
+
+Step 3: Open index.html in your browser.
 
 Alternatively, you can use the Live Server extension in Visual Studio Code.
+
+<br>
 
 📱 Responsive Design
 
@@ -115,6 +144,9 @@ Desktop: Centered game layout with a 13-column letter grid.
 Mobile: Responsive layout with a 7-column letter grid.
 Short Screens: Reduced spacing and image sizes to make better use of available vertical space.
 Accessibility: Visible keyboard focus indicators and reduced-motion preferences.
+
+<br>
+
 🎨 Customization
 Adding New Words
 
@@ -127,6 +159,9 @@ const words = {
     Technology: ["javascript", "computer", "browser"],
 };
 
+
+<br>
+
 Changing Game Settings
 
 You can customize the main game settings in main.js:
@@ -136,9 +171,14 @@ const MAX_MISTAKES = 6;
 const HINT_COST = 5;
 const WIN_POINTS = 10;
 
+
+<br>
+
 Customizing the Design
 
 Edit style.css to modify colors, typography, spacing, button styles, and responsive layouts.
+
+<br>
 
 🖼️ Game Assets
 
@@ -148,12 +188,18 @@ Make sure the following files are included:
 
 hangman0.png through hangman6.png
 winner.png
+
+<br>
+
 👩‍💻 Author
 
 Negar Younesi
 
 GitHub: @negar-younesi
 Project Repository: hangman-game
+
+<br>
+
 🤝 Contributing
 
 Suggestions, improvements, and contributions are welcome!
@@ -163,6 +209,9 @@ Create a new branch.
 Make your changes.
 Commit your changes.
 Open a Pull Request.
+
+<br>
+
 ⭐ Support
 
 If you enjoy this project, consider giving it a star on GitHub!
