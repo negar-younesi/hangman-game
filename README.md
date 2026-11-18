@@ -3,35 +3,28 @@
 Check out the live version of the game:
 
 👉 [Play Hangman Game](https://negar-younesi.github.io/hangman-game/)
+
 🎮 Hangman Game
 
-A simple, interactive, and responsive Hangman Game built with HTML, CSS, and Vanilla JavaScript.
+A simple, interactive, and responsive Hangman game built with HTML, CSS, and JavaScript.
 
-Challenge yourself to guess the hidden word one letter at a time. Be careful — you only have 6 incorrect attempts before the game is over!
+Guess the hidden word before the hangman is complete! Play using your keyboard or by clicking the on-screen letters.
 
 ✨ Features
-🎯 Random word selection.
-⌨️ Physical keyboard support.
-🖱️ Interactive on-screen keyboard.
-🔄 New Game functionality.
-🚫 Prevents guessing the same letter multiple times.
-❤️ Visual feedback for incorrect guesses.
-🏆 Automatic win and loss detection.
-📱 Responsive design for desktop and mobile devices.
-♿ Basic accessibility support.
-⚡ No external libraries or dependencies.
-🛠️ Built With
-HTML5 – Semantic structure and accessibility.
-CSS3 – Responsive layout, styling, and animations.
-JavaScript (ES6+) – Game logic and user interactions.
-📸 Screenshots
-
-<!-- Add your project screenshots here -->
-
-<!--
-![Game Screenshot](./screenshots/game.png)
--->
-
+Multiple Categories: General, Animals, Fruits, and Colors.
+Interactive Keyboard: Guess letters using your physical keyboard or on-screen buttons.
+Hint System: Reveal a random hidden letter for 5 points.
+Scoring System: Earn 10 points for each successful round.
+Mistake Counter: You have a maximum of 6 incorrect guesses.
+Visual Feedback: Hangman illustrations update with each incorrect guess.
+Win & Lose Messages: Get instant feedback when the game ends.
+New Game: Start a new round without refreshing the page.
+Responsive Design: Optimized for desktop and mobile screens.
+Compact Layout: Designed to fit within the viewport on typical desktop screens without vertical scrolling.
+🛠️ Technologies
+HTML5
+CSS3
+JavaScript (Vanilla JS)
 📂 Project Structure
 text
 hangman-game/
@@ -51,104 +44,51 @@ hangman-game/
 ├── hangman6.png
 └── winner.png
 
+🎯 How to Play
+Open the game in your browser.
+A random word and category will be displayed.
+Guess the hidden word by clicking letters or using your keyboard.
+Each incorrect guess adds one mistake.
+You have 6 chances to guess the word.
+Use the Hint button to reveal a hidden letter at the cost of 5 points.
+Earn 10 points when you successfully guess a word.
+Click New Game to start another round.
+🏆 Scoring Rules
+Action Points
+Correctly guess a word +10
+Use a hint -5
+Incorrect guess 0
+
+Your score is preserved between rounds.
+
 🚀 Getting Started
 
-Follow these steps to run the project locally.
+No installation or additional dependencies are required.
 
-Prerequisites
-
-You only need:
-
-A modern web browser.
-Git (optional).
-A code editor such as Visual Studio Code (optional).
-Installation
 Clone the repository:
 bash
-git clone https://github.com/YOUR-USERNAME/hangman-game.git
+git clone https://github.com/negar-younesi/hangman-game.git
 
-Navigate to the project directory:
+Navigate to the project folder:
 bash
 cd hangman-game
 
-Open the project in your code editor.
-Run index.html in your browser.
+Open index.html in your browser.
 
-You can also use the Live Server extension in Visual Studio Code for a better development experience.
+Alternatively, use the VS Code Live Server extension.
 
-🎮 How to Play
-Start the game and a random word will appear as hidden letters.
-Guess the word by clicking the letters on the screen or using your physical keyboard.
-Correct guesses reveal the matching letters.
-Incorrect guesses increase the mistake counter and update the Hangman illustration.
-You have a maximum of 6 incorrect attempts.
-Guess the complete word to win!
-If you run out of attempts, the game reveals the correct word.
-Click New Game to start another round.
-⚙️ Customization
+🌐 Live Demo
 
-You can easily customize the game by editing the configuration in main.js.
+Play Hangman Game
 
-Add or Remove Words
+📱 Responsive Design
 
-Modify the WORDS array to change the available words:
+The game uses a compact layout to make the main game elements accessible without vertical scrolling on typical desktop screens. It also adapts to smaller mobile screens.
 
-javascript
-const WORDS = [
-"never",
-"break",
-"that",
-"bullet",
-"under"
-];
+👩‍💻 Author
 
-Change Maximum Attempts
+Negar Younesi
 
-You can change the number of allowed incorrect guesses:
+GitHub: @negar-younesi
 
-javascript
-const MAX_MISTAKES = 6;
-
-Note: If you change the maximum attempts, make sure the corresponding Hangman images are available in the images directory.
-
-🖼️ Game Assets
-
-The images directory contains the illustrations used throughout the game.
-
-Image Description
-hangman0.png Initial game state
-hangman1.png – hangman6.png Incorrect guess stages
-winner.png Winning state
-
-Make sure all image filenames and paths match the references in main.js.
-
-🌐 Browser Compatibility
-
-The game is designed to work with modern web browsers that support HTML5, CSS3, and modern JavaScript features.
-
-🔮 Future Improvements
-
-Some ideas for future versions:
-
-Difficulty levels (Easy, Medium, Hard).
-Word categories and themed challenges.
-Score tracking and high scores.
-Sound effects and animations.
-Hint system.
-Multiplayer mode.
-Dark mode.
-🤝 Contributing
-
-Contributions, suggestions, and improvements are welcome!
-
-If you have an idea to make the game better, feel free to fork the repository and submit a pull request.
-
-📄 License
-
-This project is available for educational and personal use.
-
-Feel free to explore, modify, and improve the source code.
-
-If you enjoyed this project, consider giving it a ⭐ on GitHub!
-
-Made with ❤️ using HTML, CSS, and JavaScript.
+⭐ If you enjoy this project, consider giving it a star on GitHub!
