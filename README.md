@@ -6,25 +6,36 @@ Check out the live version of the game:
 
 🎮 Hangman Game
 
-A simple, interactive, and responsive Hangman game built with HTML, CSS, and JavaScript.
+A simple, interactive, and responsive Hangman Game built with HTML5, CSS3, and Vanilla JavaScript.
 
-Guess the hidden word before the hangman is complete! Play using your keyboard or by clicking the on-screen letters.
+Guess the hidden word before the hangman is complete! Choose from different word categories, earn points, use hints strategically, and challenge yourself.
+
+🚀 Live Demo
+
+Check out the live version of the game:
+
+👉 Play Hangman Game
 
 ✨ Features
-Multiple Categories: General, Animals, Fruits, and Colors.
-Interactive Keyboard: Guess letters using your physical keyboard or on-screen buttons.
+Multiple Categories: Guess words from General, Animals, Fruits, and Colors.
+Interactive Keyboard: Play using your physical keyboard or on-screen letter buttons.
+Random Word Selection: A random category and word are selected for each round.
 Hint System: Reveal a random hidden letter for 5 points.
-Scoring System: Earn 10 points for each successful round.
+Scoring System: Earn 10 points for every successfully completed round.
 Mistake Counter: You have a maximum of 6 incorrect guesses.
 Visual Feedback: Hangman illustrations update with each incorrect guess.
-Win & Lose Messages: Get instant feedback when the game ends.
-New Game: Start a new round without refreshing the page.
+Win & Lose Detection: Receive instant feedback when the game ends.
+New Game: Start another round without refreshing the page.
 Responsive Design: Optimized for desktop and mobile screens.
-Compact Layout: Designed to fit within the viewport on typical desktop screens without vertical scrolling.
+Compact Layout: Designed to keep the main game elements accessible within typical desktop viewports.
+Accessibility: Includes keyboard focus indicators and reduced-motion support.
 🛠️ Technologies
 HTML5
 CSS3
 JavaScript (Vanilla JS)
+
+No external libraries, frameworks, or dependencies are required.
+
 📂 Project Structure
 text
 hangman-game/
@@ -46,49 +57,120 @@ hangman-game/
 
 🎯 How to Play
 Open the game in your browser.
-A random word and category will be displayed.
-Guess the hidden word by clicking letters or using your keyboard.
+A random word and its category will be displayed.
+Guess the hidden word by clicking the letters or using your keyboard.
+Correct guesses reveal the matching letters.
 Each incorrect guess adds one mistake.
-You have 6 chances to guess the word.
+You have a maximum of 6 incorrect guesses.
 Use the Hint button to reveal a hidden letter at the cost of 5 points.
-Earn 10 points when you successfully guess a word.
+Earn 10 points when you successfully guess the word.
 Click New Game to start another round.
 🏆 Scoring Rules
 Action Points
-Correctly guess a word +10
+Successfully guess a word +10
 Use a hint -5
 Incorrect guess 0
 
-Your score is preserved between rounds.
+Additional Rules:
 
+You need at least 5 points to use a hint.
+Each hint reveals one random unrevealed letter.
+A hint counts as a guess and can reveal a letter even if it is incorrect.
+Your score is preserved between rounds.
+Starting a new game does not reset your accumulated score.
+📚 Word Categories
+
+The game currently includes four categories:
+
+Category Example Words
+General Never, Break, Bullet, Water, Music
+Animals Tiger, Horse, Rabbit, Dolphin
+Fruits Apple, Banana, Mango, Cherry
+Colors Purple, Yellow, Green, White
 🚀 Getting Started
 
 No installation or additional dependencies are required.
 
+Prerequisites
+
+A modern web browser is all you need.
+
+Installation
 Clone the repository:
 bash
 git clone https://github.com/negar-younesi/hangman-game.git
 
-Navigate to the project folder:
+Navigate to the project directory:
 bash
 cd hangman-game
 
 Open index.html in your browser.
 
-Alternatively, use the VS Code Live Server extension.
-
-🌐 Live Demo
-
-Play Hangman Game
+Alternatively, you can use the Live Server extension in Visual Studio Code.
 
 📱 Responsive Design
 
-The game uses a compact layout to make the main game elements accessible without vertical scrolling on typical desktop screens. It also adapts to smaller mobile screens.
+The game features a clean and compact interface designed for different screen sizes.
 
+Desktop: Centered game layout with a 13-column letter grid.
+Mobile: Responsive layout with a 7-column letter grid.
+Short screens: Reduced spacing and image sizes to make better use of available vertical space.
+Accessibility: Visible keyboard focus indicators and reduced-motion preferences.
+🎨 Customization
+Adding New Words
+
+You can add new words or categories by editing the words object in main.js.
+
+javascript
+const words = {
+General: ["never", "break", "water"],
+Animals: ["tiger", "horse", "rabbit"],
+Technology: ["javascript", "computer", "browser"],
+};
+
+Changing Game Settings
+
+You can customize the main game settings in main.js:
+
+javascript
+const MAX_MISTAKES = 6;
+const HINT_COST = 5;
+const WIN_POINTS = 10;
+
+Customizing the Design
+
+Edit style.css to modify colors, typography, spacing, button styles, and responsive layouts.
+
+🖼️ Game Assets
+
+The images/ directory contains the illustrations used during gameplay.
+
+Make sure the following files are included:
+
+hangman0.png through hangman6.png
+winner.png
 👩‍💻 Author
 
 Negar Younesi
 
 GitHub: @negar-younesi
+Project Repository: hangman-game
+🤝 Contributing
 
-⭐ If you enjoy this project, consider giving it a star on GitHub!
+Suggestions, improvements, and contributions are welcome!
+
+Fork the repository.
+Create a new branch.
+Make your changes.
+Commit your changes.
+Open a Pull Request.
+⭐ Support
+
+If you enjoy this project, consider giving it a star on GitHub!
+
+Thanks for playing! 🎉
+
+
+
+
+ 
