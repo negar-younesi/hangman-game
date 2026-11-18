@@ -1,10 +1,12 @@
+🚀 Live Demo
+
+👉 [Play Hangman Game](https://negar-younesi.github.io/hangman-game/)
+
 🎮 Hangman Game
 
 A simple, interactive, and responsive Hangman Game built with HTML5, CSS3, and Vanilla JavaScript.
 
 Guess the hidden word before the hangman is complete! Choose from different word categories, earn points, use hints strategically, and challenge yourself.
-
-🚀 Live Demo
 
 Check out the live version of the game:
 
@@ -64,9 +66,7 @@ Action	Points
 Successfully guess a word	+10
 Use a hint	-5
 Incorrect guess	0
-
-Additional Rules:
-
+Additional Rules
 You need at least 5 points to use a hint.
 Each hint reveals one random unrevealed letter.
 A hint counts as a guess and can reveal a letter even if it is incorrect.
@@ -90,15 +90,20 @@ Prerequisites
 A modern web browser is all you need.
 
 Installation
-Clone the repository:
+
+1. Clone the repository:
+
 bash
 git clone https://github.com/negar-younesi/hangman-game.git
 
-Navigate to the project directory:
+
+2. Navigate to the project directory:
+
 bash
 cd hangman-game
 
-Open index.html in your browser.
+
+3. Open index.html in your browser.
 
 Alternatively, you can use the Live Server extension in Visual Studio Code.
 
@@ -108,7 +113,7 @@ The game features a clean and compact interface designed for different screen si
 
 Desktop: Centered game layout with a 13-column letter grid.
 Mobile: Responsive layout with a 7-column letter grid.
-Short screens: Reduced spacing and image sizes to make better use of available vertical space.
+Short Screens: Reduced spacing and image sizes to make better use of available vertical space.
 Accessibility: Visible keyboard focus indicators and reduced-motion preferences.
 🎨 Customization
 Adding New Words
@@ -117,9 +122,9 @@ You can add new words or categories by editing the words object in main.js.
 
 javascript
 const words = {
-  General: ["never", "break", "water"],
-  Animals: ["tiger", "horse", "rabbit"],
-  Technology: ["javascript", "computer", "browser"],
+    General: ["never", "break", "water"],
+    Animals: ["tiger", "horse", "rabbit"],
+    Technology: ["javascript", "computer", "browser"],
 };
 
 Changing Game Settings
