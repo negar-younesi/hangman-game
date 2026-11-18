@@ -1,10 +1,3 @@
-## 🚀 Live Demo
-
-Check out the live version of the game:
-
-👉 [Play Hangman Game](https://negar-younesi.github.io/hangman-game/)
-
-🎮 Hangman Game
 🎮 Hangman Game
 
 A simple, interactive, and responsive Hangman Game built with HTML5, CSS3, and Vanilla JavaScript.
@@ -71,10 +64,12 @@ Action	Points
 Successfully guess a word	+10
 Use a hint	-5
 Incorrect guess	0
-Additional Rules
+
+Additional Rules:
+
 You need at least 5 points to use a hint.
 Each hint reveals one random unrevealed letter.
-A hint counts as a guess.
+A hint counts as a guess and can reveal a letter even if it is incorrect.
 Your score is preserved between rounds.
 Starting a new game does not reset your accumulated score.
 📚 Word Categories
@@ -113,7 +108,7 @@ The game features a clean and compact interface designed for different screen si
 
 Desktop: Centered game layout with a 13-column letter grid.
 Mobile: Responsive layout with a 7-column letter grid.
-Short Screens: Reduced spacing and image sizes to make better use of available vertical space.
+Short screens: Reduced spacing and image sizes to make better use of available vertical space.
 Accessibility: Visible keyboard focus indicators and reduced-motion preferences.
 🎨 Customization
 Adding New Words
